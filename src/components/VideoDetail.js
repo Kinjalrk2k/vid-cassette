@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Typography, CircularProgress } from "@material-ui/core";
+import { Paper, Typography } from "@material-ui/core";
 
 class VideoDetail extends React.Component {
   render() {
@@ -38,6 +38,7 @@ class VideoDetail extends React.Component {
             }}
             frameborder="0"
             allowfullscreen
+            title="Video Player"
           />
         </div>
         <div style={{ padding: "1rem" }}>

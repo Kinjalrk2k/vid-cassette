@@ -16,6 +16,7 @@ class VideoItem extends React.Component {
         <CardActionArea onClick={() => onVideoSelect(video)}>
           <CardMedia
             image={video.snippet.thumbnails.high.url}
+            alt={video.snippet.title}
             style={{ height: 0, paddingTop: "56.25%" }}
           />
           <CardContent>

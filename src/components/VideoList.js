@@ -6,7 +6,13 @@ class VideoList extends React.Component {
     const { videos, onVideoSelect } = this.props;
 
     const renderedList = videos.map((video) => {
-      return <VideoItem onVideoSelect={onVideoSelect} video={video} />;
+      return (
+        <VideoItem
+          key={video.id.videoId}
+          onVideoSelect={onVideoSelect}
+          video={video}
+        />
+      );
     });
 
     return <div>{renderedList}</div>;
