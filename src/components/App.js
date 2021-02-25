@@ -11,6 +11,8 @@ import {
 } from "@material-ui/core";
 import { NavigateNext, NavigateBefore } from "@material-ui/icons";
 
+import * as Scroll from "react-scroll";
+
 import youtube from "../apis/youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
@@ -47,6 +49,7 @@ class App extends React.Component {
 
   onVideoSelect = (video) => {
     this.setState({ selectedVideo: video });
+    Scroll.animateScroll.scrollToTop();
   };
 
   renderNavigation() {}
