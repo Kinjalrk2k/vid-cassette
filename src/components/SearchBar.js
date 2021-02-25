@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchBar.css";
 import { TextField } from "@material-ui/core";
 
 class SearchBar extends React.Component {
@@ -10,11 +11,16 @@ class SearchBar extends React.Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
+    this.props.onFormSubmit(this.state.term);
   };
 
   render() {
     return (
-      <form style={{ width: "100%" }} onSubmit={this.onFormSubmit}>
+      <form
+        style={{ width: "100%" }}
+        onSubmit={this.onFormSubmit}
+        autoComplete="off"
+      >
         <TextField
           id="searchBar"
           label="Search"
@@ -23,7 +29,6 @@ class SearchBar extends React.Component {
           fullWidth
           margin="normal"
           variant="filled"
-          color="secondary"
           value={this.state.term}
           onChange={this.onInputChange}
         />
