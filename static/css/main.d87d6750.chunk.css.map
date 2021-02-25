@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/SearchBar.css"],"names":[],"mappings":"AAAA,iBACE,UACF","file":"main.d87d6750.chunk.css","sourcesContent":["#searchBar-label {\r\n  color: white;\r\n}\r\n"]}
