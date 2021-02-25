@@ -36,8 +36,8 @@ class VideoDetail extends React.Component {
               top: 0,
               left: 0,
             }}
-            frameborder="0"
-            allowfullscreen
+            frameBorder="0"
+            allowFullScreen
             title="Video Player"
           />
         </div>
