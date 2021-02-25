@@ -12,9 +12,7 @@ class App extends React.Component {
             <SearchBar />
           </Toolbar>
         </AppBar>
-        <Container>
-          <div></div>
-        </Container>
+        <Container>Hello World!</Container>
       </div>
     );
   }
